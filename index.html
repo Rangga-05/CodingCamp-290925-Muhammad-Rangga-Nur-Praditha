@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <!-- Action ROw -->
+         <div class="action-row">
+            <input type="text" id="task-input" placeholder="Input Task" required>
+            <input type="date" id="date-input" required>
+            <button type="submit" id="add-task">Add Task</button>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sort ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-filter="all">All</a>
+                        <a href="#" data-filter="completed">Completed</a>
+                        <a href="#" data-filter="pending">Pending</a>
+                    </div>
+                </div>
+            
+            <button id="delete-all" class="delete-all-btn">Delete All</button>
+         </div>
+
+        <!-- Progress -->
+         <div class="progress">
+            <p id="progress-text">Progress: 0%</p>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+         </div>
+
+         <!-- Table Title -->
+          <h2 class="table-title">To-Do List</h2>
+
+        <!-- Task Table -->
+         <table id="task-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="task-body"></tbody>
+         </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
