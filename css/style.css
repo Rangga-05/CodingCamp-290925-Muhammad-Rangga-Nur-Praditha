@@ -1,0 +1,192 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    width: 600px;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Action row*/
+.action-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn{
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #16213e;
+  min-width: 120px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: #0f3460;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+#add-task{
+    background: #0f3460;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#add-task:hover{
+    background: #533483;
+}
+
+.edit-btn{
+    background: #f39c12;
+    color: white;
+}
+.save-btn{
+    background: #21bf73;
+    color: white;
+}
+.cancel-btn{
+    background: #e84545;
+    color: white;
+}
+
+.delete-all-btn{
+    background: #e84545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-all-btn:hover{
+    background: #c0392b;
+}
+
+/*Progress Bar*/
+.progress{
+    margin: 10px 0;
+}
+
+.progress-bar{
+    width: 100%;
+    background: #1a1a2e;
+    height: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#progress-fill{
+    height: 100%;
+    width: 0%;
+    background: #21bf73;
+    transition: width 0.3s;
+}
+
+/*Table*/
+.table-title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #0f3460;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background: #16213e;
+}
+
+tr:nth-child(even) {
+    background: #1a1a2e;
+}
+
+.completed td{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/*Actions button dalam tabel*/
+.actions button{
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.complete-btn{
+    background: #21bf73;
+    color: white;
+}
+
+.delete-btn{
+    background: #e84545;
+    color: white;
+}
+
+.credit{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
